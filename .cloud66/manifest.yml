@@ -1,0 +1,4 @@
+production:
+  rails:
+    configuration:
+      passenger_version: 3.0.20
