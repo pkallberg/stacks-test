@@ -1,0 +1,6 @@
+production:
+  rails:
+    server:
+      unique_name: env_var_test
+  environment_variables: 
+    TEST_VAR: 5
