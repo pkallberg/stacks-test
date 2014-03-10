@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 ruby '2.1.1'
 
 gem 'rails', '3.0.3'
-gem 'unicorn'
+gem 'puma'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
