@@ -1,4 +1,6 @@
 production:
   first_thing:
-    command: cd /tmp && echo 'wtf awesome' >> /tmp/deploy_command.log
-    target: rails
+    - source: 
+      command: sudo gem install thin --no-ri --no-rdoc && sudo gem install faye --no-ri --no-rdoc
+      target: any      
+      apply_during: build_only
