@@ -1,6 +1,10 @@
 production:
   first_thing:
-    - source: 
-      command: sudo gem install thin --no-ri --no-rdoc && sudo gem install faye --no-ri --no-rdoc
+    - command: sudo gem install thin --no-ri --no-rdoc && sudo gem install faye --no-ri --no-rdoc
       target: any      
       apply_during: build_only
+    - command: echo 'tick' >> /tmp/boom.log
+      target: any      
+  last_thing:
+    command: echo 'boom' >> /tmp/boom.log
+    target: any      
