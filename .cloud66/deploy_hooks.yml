@@ -1,0 +1,4 @@
+production:
+  first_thing:
+    command: cd /tmp && echo 'wtf awesome' >> /tmp/deploy_command.log
+    target: rails
