@@ -1,4 +1,4 @@
 production:
   procfile_metadata:
     worker: 
-      stop_sequence: kill
+      stop_sequence: usr1, 5, term, 5, kill
