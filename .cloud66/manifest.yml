@@ -1,0 +1,4 @@
+production:
+  procfile_metadata:
+    worker: 
+      stop_sequence: 123
