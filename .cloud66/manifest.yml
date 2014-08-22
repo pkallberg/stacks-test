@@ -12,4 +12,4 @@ production:
             perfect_forward_secrecy: true
             passenger_version: 4.0.48
             nginx_cors: true
-            ruby_version: 2.1.1
+            ruby_version: 2.1.2
