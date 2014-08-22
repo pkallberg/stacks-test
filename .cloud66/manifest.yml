@@ -4,6 +4,7 @@ development:
             reserved_server_memory: 100
             passenger_process_memory: 150
             perfect_forward_secrecy: true
+            ruby_version: 2.1.0
 production:
     rails:
         configuration:
