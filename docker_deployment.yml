@@ -18,6 +18,7 @@ production:
       pre_start_signal: "USR1"
       pre_stop_sequence: "1m:USR2:30s:USR1:50s"
       stop_grace: "30s"
+      capture_output: true
     node:
       image: khash/node
       command: node test.js
