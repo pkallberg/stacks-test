@@ -1,3 +1,2 @@
 production: 
-    rabbitmq: 
-        configuration:
+    rabbitmq: configuration
