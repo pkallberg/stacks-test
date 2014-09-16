@@ -1,1 +1,1 @@
-production: rabbit
+production: rabbitmq
