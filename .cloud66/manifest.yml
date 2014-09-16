@@ -1,2 +1,2 @@
 production: 
-    rabbitmq: configuration
+    rabbitmq: {}
