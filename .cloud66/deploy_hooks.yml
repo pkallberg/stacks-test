@@ -1,4 +1,10 @@
 production:
-    after_checkout:
-        - command: cd $STACK_PATH && touch woohoo.vic
-          target: rails
+  after_checkout:
+    - command: cd $STACK_PATH && touch woohoo_after_checkout.vic
+      target: rails
+  after_bundle:
+    - command: cd $STACK_PATH && touch woohoo_after_bundle.vic
+      target: rails
+  after_symlink:
+    - command: cd $STACK_PATH && touch woohoo_after_symlink.vic
+      target: rails
