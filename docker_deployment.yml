@@ -3,8 +3,8 @@ production:
     web:
       image: quay.io/cloud66/sample-rails
       command: bundle exec rackup -p 3000
-      # build_command: bundle exec rake db:create
-      # deploy_command: bundle exec rake db:migrate
+      build_command: bundle exec rake db:migrate
+      deploy_command: bundle exec rake db:migrate
       log_folder: /usr/src/app/log
       local_ports: [3000]
       public_port: "80"
