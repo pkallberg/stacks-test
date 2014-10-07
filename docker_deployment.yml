@@ -8,5 +8,7 @@ production:
       log_folder: /usr/src/app/log
       local_ports: [3000]
       public_port: "80:443"
+      volumes:
+        - host/tmp:container/tmp_host
   databases:
     - "mysql"
