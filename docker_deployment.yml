@@ -1,6 +1,6 @@
 production:
   services:
-    web:
+    web: 
       image: quay.io/cloud66/sample-rails
       command: rackup -p 3000
       build_command: rake db:migrate
@@ -10,5 +10,14 @@ production:
       public_port: "80:443"
       volumes:
         - host/tmp:container/tmp_host
+      requires:
+        - "rethinkdb"
+    rethinkdb:
+      image: barkerja/rethinkdb
+      command: rethinkdb --bind all
+      local_ports:
+        - 8080
+      public_port: "8080:"
+      log_folder: /var/deploy/rethinkdb/log
   databases:
     - "mysql"
